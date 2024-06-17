@@ -24,9 +24,9 @@ export const HeroBgText = ({
     setTimeout(() => {
       setVisible(true);
       document.querySelector("body")?.classList.remove("overflow-hidden");
-    }, 7000);
+    }, 6000);
   });
-  const [start, setStart] = useState(false);
+
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
@@ -40,7 +40,6 @@ export const HeroBgText = ({
 
       getDirection();
       getSpeed();
-      setStart(true);
     }
   }
   const getDirection = () => {
@@ -73,7 +72,7 @@ export const HeroBgText = ({
   return (
     <div
       ref={containerRef}
-      className="scroller relative z-20 mb-24 lg:mb-0  w-full overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] "
+      className="scroller relative z-20 mb-24 w-full  overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]  lg:mb-0 "
     >
       <ul
         ref={scrollerRef}

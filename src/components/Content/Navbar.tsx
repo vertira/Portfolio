@@ -13,6 +13,7 @@ import CustomUnderLineDesktop from "../ui/navbar/custom-underline-desktop";
 import { navigation } from "@data/constants";
 
 export default function NavBar() {
+  const [isDelay, setIsDelay] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
@@ -27,6 +28,11 @@ export default function NavBar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsDelay(false);
+    }, 5500);
+  });
   return (
     <header
       className={`fixed top-0 z-50 h-16 w-full shrink-0 items-center justify-center px-4 font-monument transition-all duration-300 ease-in-out md:px-6 ${
@@ -68,7 +74,7 @@ export default function NavBar() {
           <Button
             variant="ghost"
             size="icon"
-            className={`h-max w-max  bg-neutral-200/90 dark:bg-neutral-900/90 lg:hidden ${isMenuOpen ? "opacity-0" : "opacity-90"}`}
+            className={`h-max w-max  bg-neutral-200/90 dark:bg-neutral-900/90 lg:hidden ${isMenuOpen ? "opacity-0" : "opacity-90"} ${isDelay ? "opacity-0" : "opacity-90"}`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <MenuIcon className="h-12 w-12 stroke-black dark:stroke-white" />
@@ -76,10 +82,7 @@ export default function NavBar() {
           </Button>
         </div>
       </div>
-      <Sheet
-        open={isMenuOpen}
-        onOpenChange={setIsMenuOpen}
-      >
+      <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
         <SheetContent
           side="left"
           className="glassOverlay flex h-full flex-col justify-center p-6 font-monument text-3xl text-neutral-200 transition-all duration-300 ease-in-out"
