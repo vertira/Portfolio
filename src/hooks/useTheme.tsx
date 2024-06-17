@@ -14,7 +14,11 @@ export function useTheme(): [
 ] {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
     const storedPreference = localStorage.getItem("dark-mode");
-    return storedPreference === "enabled";
+    if (storedPreference) {
+      return storedPreference === "enabled";
+    } else {
+      return true;
+    }
   });
 
   useEffect(() => {
