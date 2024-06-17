@@ -1,4 +1,4 @@
-import ogImageSrc from "@images/icon.png";
+import ogImageSrc from "@images/portfolio.png"
 
 export const SITE = {
   title: "Portfolio Krystian Grala | DEV  ",
@@ -34,7 +34,7 @@ export const OG = {
   locale: "en_US",
   type: "website",
   url: SITE.url,
-  title: `${SITE.title}: : Portfolio front-end developer`,
+  title: `Portfolio Krystian Grala | Front-end developer`,
   description:
     "Portfolio of Krystian Grala, a front-end developer. Explore my projects, skills, and contact me to discuss collaboration opportunities.",
   image: ogImageSrc,

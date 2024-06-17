@@ -7,6 +7,16 @@ export const CardGradContainer = () => {
       <div className="max-w-lg rounded-[22px]   bg-zinc-900 p-4 sm:p-10 ">
         <CardGradient color="custom-gradient1">
           <CardGradContent
+            src="/portfolio.webp"
+            title="Portfolio"
+            description="A modern portfolio website. Utilizing the React framework for components, Tailwind CSS for styles, Framer Motion for animations, Astro for building fast and a focus on user experience and design."
+            hide={true}
+          />
+        </CardGradient>
+      </div>
+      <div className="max-w-lg rounded-[22px]  bg-zinc-900 p-4 sm:p-10 ">
+      <CardGradient color="custom-gradient2">
+          <CardGradContent
             src="/soon.webp"
             title="It’s a Secret! But Not for Long. Coming Soon!"
             description=""
@@ -15,24 +25,14 @@ export const CardGradContainer = () => {
         </CardGradient>
       </div>
       <div className="max-w-lg rounded-[22px]  bg-zinc-900 p-4 sm:p-10 ">
-        <CardGradient color="custom-gradient2">
+      <CardGradient color="custom-gradient3">
           <CardGradContent
-            src="/1.jpg"
+            src="/groomka.webp"
             title="Groomka Landing Page"
             description="Groomka is a landing page built using Astro, React, TypeScript, and TailwindCSS. This project is designed to provide a modern, fast, and responsive user experience."
             liveUrl="https://groomka.vercel.app/"
             codeUrl="https://github.com/vertira/groomka"
             hide={false}
-          />
-        </CardGradient>
-      </div>
-      <div className="max-w-lg rounded-[22px]  bg-zinc-900 p-4 sm:p-10 ">
-        <CardGradient color="custom-gradient3">
-          <CardGradContent
-            src="/soon.webp"
-            title="It’s a Secret! But Not for Long. Coming Soon!"
-            description=""
-            hide={true}
           />
         </CardGradient>
       </div>

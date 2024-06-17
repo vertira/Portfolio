@@ -21,9 +21,8 @@ interface Props {
     <script is:inline>
       (function() {
         const userPrefersDark = window.localStorage.getItem('dark-mode') === 'enabled';
-        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-        if (userPrefersDark || (!window.localStorage.getItem('dark-mode') && systemPrefersDark)) {
+        if (userPrefersDark || (!window.localStorage.getItem('dark-mode'))) {
           document.documentElement.classList.add('dark');
         }
       })();

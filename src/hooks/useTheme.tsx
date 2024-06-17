@@ -1,12 +1,5 @@
 import { useEffect, useState } from "react";
 
-function detectSystemPreference(): boolean {
-  return (
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-  );
-}
-
 function applyDarkMode(): void {
   document.documentElement.classList.add("dark");
 }
@@ -21,10 +14,7 @@ export function useTheme(): [
 ] {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
     const storedPreference = localStorage.getItem("dark-mode");
-    if (storedPreference) {
-      return storedPreference === "enabled";
-    }
-    return detectSystemPreference();
+    return storedPreference === "enabled";
   });
 
   useEffect(() => {

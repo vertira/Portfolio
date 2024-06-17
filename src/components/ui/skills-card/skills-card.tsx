@@ -18,7 +18,9 @@ export const SkillsCard = ({
         />
         <h3 className="text-lg font-semibold text-neutral-200">{item.title}</h3>
       </div>
-      <p className="mt-2 text-sm text-gray-400">{item.description}</p>
+      <p className="mt-2 text-sm font-light text-gray-300">
+        {item.description}
+      </p>
     </div>
   ));
 };

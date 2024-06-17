@@ -41,7 +41,7 @@ const Text = ({ words, color }: TextProps) => {
   return (
     <div className="flex h-max w-full flex-col items-center justify-center overflow-hidden ">
       <h1
-        className={`z-20 text-center text-4xl font-bold text-neutral-800 md:text-center dark:text-${color}  w-full font-monument font-light leading-[1.3] tracking-tighter text-neutral-100 md:text-7xl xl:text-8xl `}
+        className={`z-20 text-center text-4xl font-bold text-neutral-800 md:text-center dark:text-${color}  w-full font-monument font-medium leading-[1.3] tracking-tighter text-neutral-100 md:text-7xl xl:text-8xl `}
       >
         {renderWords()}
       </h1>
