@@ -19,24 +19,14 @@ export default function NavBar() {
   const [isHover, setIsHover] = useState("");
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
+      const currentScrollPos = window.scrollY;
       const isScrollingDown = currentScrollPos > prevScrollPos;
       setIsNavbarVisible(!isScrollingDown);
       setPrevScrollPos(currentScrollPos);
-      console.log(currentScrollPos);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
-  // const handleMenuVisible = () => {
-  //   setTimeout(
-  //     () => {
-  //       setIsNavbarVisible(true);
-  //     },
-  //     window.pageYOffset > window.innerHeight ? 600 : 1000,
-  //   );
-  // };
-
   return (
     <header
       className={`fixed top-0 z-50 h-16 w-full shrink-0 items-center justify-center px-4 font-monument transition-all duration-300 ease-in-out md:px-6 ${
@@ -124,7 +114,4 @@ export default function NavBar() {
       </Sheet>
     </header>
   );
-}
-function useDebounce(text: any, arg1: number): [any] {
-  throw new Error("Function not implemented.");
 }

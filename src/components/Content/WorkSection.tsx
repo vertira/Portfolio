@@ -1,4 +1,3 @@
-import React from "react";
 import { TextParallaxContent } from "../ui/container-card/text-parallax-card";
 import { Divider } from "../ui/container-card/divider-lamp";
 import { StickyCard } from "../ui/container-card/sticky-card";

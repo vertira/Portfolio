@@ -1,11 +1,9 @@
-import { useMotionTemplate, useMotionValue } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
 export const HeroBgText = ({
   items,
   direction = "left",
   speed = "fast",
-  className,
 }: {
   items: {
     name: string;
@@ -81,7 +79,7 @@ export const HeroBgText = ({
         ref={scrollerRef}
         className={`${visible ? "animate-scroll" : ""} flex w-max min-w-full shrink-0 flex-nowrap gap-10`}
       >
-        {items.map((item, idx) => (
+        {items.map((item) => (
           <li
             className="relative w-max max-w-full flex-shrink-0 px-10 hover:text-neutral-50/20    dark:text-neutral-50/5 lg:px-24"
             key={item.name}

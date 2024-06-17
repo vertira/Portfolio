@@ -9,7 +9,7 @@ export const ContactSection = () => {
     <TextParallaxContent sectionId="contact">
       <StickyCard>
         <motion.div
-          className="flex h-screen flex-col"
+          className="flex relative h-screen flex-col"
           initial={{ opacity: 0, x: -150 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 2 }}

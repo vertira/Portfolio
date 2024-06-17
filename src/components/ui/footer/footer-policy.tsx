@@ -26,7 +26,7 @@ export const FooterPolicy = () => {
         <div className="grid grid-cols-1 gap-4 py-4">
           {policy.map((item) => {
             return (
-              <div>
+              <div key={item.title}>
                 <span className="text-md text-justify lg:text-xl">
                   {item.title}
                 </span>

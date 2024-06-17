@@ -1,4 +1,4 @@
-import { useScroll, useTransform, motion, useSpring } from "framer-motion";
+import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 
 export const StickyCard = ({ children }: { children: React.ReactNode }) => {
@@ -19,7 +19,7 @@ export const StickyCard = ({ children }: { children: React.ReactNode }) => {
       className={`-z-1 sticky h-full overflow-hidden rounded-xl`}
     >
       <motion.div
-        className="absolute inset-0 -z-10 h-full"
+        className="relative inset-0 -z-10 h-full"
         style={{
           opacity,
         }}

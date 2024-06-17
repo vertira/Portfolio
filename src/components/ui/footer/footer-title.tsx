@@ -1,4 +1,4 @@
-import { SITE } from "@/data_files/constants";
+
 
 export const FooterTitle = () => {
   const currentYear = new Date().getFullYear();

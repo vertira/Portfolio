@@ -3,9 +3,9 @@ export const SkillsCard = ({
 }: {
   items: { src: string; title: string; description: string }[];
 }) => {
-  return items.map((item, i) => (
+  return items.map((item) => (
     <div
-      className="rounded-lg bg-neutral-950/90 dark:bg-neutral-950/40 p-6  shadow-2xl transition-all duration-300  lg:hover:scale-125 select-none"
+      className="select-none rounded-lg bg-neutral-950/90 p-6  shadow-2xl transition-all duration-300  dark:bg-neutral-950/40 lg:hover:scale-125"
       key={item.title}
     >
       <div className="flex items-center space-x-4 ">
