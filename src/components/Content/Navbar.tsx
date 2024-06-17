@@ -79,7 +79,6 @@ export default function NavBar() {
       <Sheet
         open={isMenuOpen}
         onOpenChange={setIsMenuOpen}
-        className="lg:hidden"
       >
         <SheetContent
           side="left"
