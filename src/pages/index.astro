@@ -1,0 +1,20 @@
+---
+// Import the necessary components
+import MainLayout from "@/layouts/MainLayout.astro";
+import { HeroSection } from "@/components/Content/HeroSection";
+import { SkillsSection } from "@/components/Content/SkillsSection";
+import { WorkSection } from "@/components/Content/WorkSection";
+import { ContactSection } from "@/components/Content/ContactSection";
+---
+
+<MainLayout>
+  <div class=" bg-neutral-100 dark:bg-neutral-950  ">
+    <HeroSection client:load/>
+    <div class="max-sm:hidden h-[20vh]"></div>
+    <SkillsSection  client:only="react"/>
+    <div class="h-[20vh]"></div>
+    <WorkSection client:only="react"/>
+    <div class="h-[20vh]"></div>
+    <ContactSection client:only="react"/>
+  </div>
+</MainLayout>

@@ -1,0 +1,46 @@
+---
+// Import section components
+import MainLayout from "@/layouts/MainLayout.astro";
+import { SITE } from "@data/constants";
+
+const pageTitle: string = `Page Not Found | ${SITE.title}`;
+const title: string = "404";
+const subTitle: string = "Oops, this isn't the tool you were looking for!";
+const content: string =
+  "Don't let this hiccup slow you down. Let's get you back to building your masterpiece.";
+---
+
+<MainLayout
+  title={pageTitle}
+>
+  <section class="grid h-svh place-content-center font-monument bg-neutral-100 dark:bg-neutral-950">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16">
+      <div class="mx-auto max-w-screen-sm text-center">
+        <h1
+          class="text-dark mb-4 text-7xl font-extrabold text-cyan-500 dark:text-cyan-400 lg:text-9xl"
+        >
+          {title}
+        </h1>
+        <p
+          class="mb-4 text-balance text-3xl font-bold tracking-tight text-neutral-700 dark:text-neutral-300 md:text-4xl"
+        >
+          {subTitle}
+        </p>
+
+        <p
+          class="mb-4 text-pretty text-lg text-neutral-600 dark:text-neutral-400"
+        >
+          {content}
+        </p>
+        <button id="go-back" class="px-8 py-2 rounded-full bg-gradient-to-b from-cyan-500 to-cyan-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
+         Go Back
+        </button>
+      </div>
+    </div>
+  </section>
+</MainLayout>
+<script>
+  document.getElementById("go-back")?.addEventListener("click", () => {
+    history.back();
+  });
+</script>

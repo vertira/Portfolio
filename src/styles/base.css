@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "MonumentExtend";
+    src: url("/fonts/PPMonumentExtended-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+@layer components {
+  .outline-text {
+    color: transparent;
+    -webkit-text-stroke: 3px #ffffff1a;
+  }
+  .outline-text-light {
+    color: transparent;
+    -webkit-text-stroke: 3px #000000;
+  }
+  .contScroll {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  .lamp {
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-out;
+    transition-delay: 0;
+  }
+  .custom-gradient1 {
+    background: radial-gradient(
+        circle farthest-side at 0 100%,
+        #00ccb1,
+        transparent
+      ),
+      radial-gradient(circle farthest-side at 100% 0, #7b61ff, transparent),
+      radial-gradient(circle farthest-side at 100% 100%, #ffc414, transparent),
+      radial-gradient(circle farthest-side at 0 0, #1ca0fb, transparent);
+  }
+  .custom-gradient2 {
+    background: radial-gradient(
+        circle farthest-side at 0 100%,
+        #ff6464,
+        transparent
+      ),
+      radial-gradient(circle farthest-side at 100% 0, #7b61ff, transparent),
+      radial-gradient(circle farthest-side at 100% 100%, #ffc414, transparent),
+      radial-gradient(circle farthest-side at 0 0, #1ca0fb, transparent);
+  }
+  .custom-gradient3 {
+    background: radial-gradient(
+        circle farthest-side at 0 100%,
+        #76ff64,
+        transparent
+      ),
+      radial-gradient(circle farthest-side at 100% 0, #7b61ff, transparent),
+      radial-gradient(circle farthest-side at 100% 100%, #ffc414, transparent),
+      radial-gradient(circle farthest-side at 0 0, #1ca0fb, transparent);
+  }
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  .glass-light {
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  .glassOverlay {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+}
