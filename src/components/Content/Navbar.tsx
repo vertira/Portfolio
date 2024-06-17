@@ -39,8 +39,10 @@ export default function NavBar() {
         isNavbarVisible ? "translate-y-0" : "-translate-y-[150%]"
       }`}
     >
-      <div className="flex h-full w-full items-center  justify-end lg:justify-center">
-        <NavigationMenu className="dark:glass glass-light mt-10 hidden justify-center rounded-md p-3 text-neutral-200 dark:text-neutral-100/60 lg:flex ">
+      <div
+        className={`flex h-full w-full items-center  justify-end lg:justify-center ${isDelay ? "opacity-0" : "opacity-90"}`}
+      >
+        <NavigationMenu className="dark:glass glass-light mt-10 hidden justify-center rounded-md p-3 text-neutral-200 dark:text-neutral-100/60 lg:flex  ">
           <NavigationMenuList>
             {navigation.map((item) => {
               const isSelected = item.name === isHover;
