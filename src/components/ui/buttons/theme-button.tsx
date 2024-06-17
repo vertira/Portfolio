@@ -17,6 +17,7 @@ export const ThemeButton = ({ height, width, className }: ThemeButtonProps) => {
       transition={{ duration: 0.5 }}
     >
       <Button
+      aria-label="Theme Button"
         variant="ghost"
         size="icon"
         className={className}

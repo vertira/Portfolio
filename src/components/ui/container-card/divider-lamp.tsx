@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 export function Divider({ title }: { title: string }) {
   return (
     <LampContainer>
-      <motion.h1
+      <motion.h2
         initial={{ opacity: 0.5, y: 100 }}
         whileInView={{ opacity: 1, y: -50 }}
         transition={{ duration: 0.5, ease: "linear" }}
-        className=" outline-text lamp z-20 mt-8 py-4 text-center font-monument text-4xl font-medium   tracking-tight text-neutral-800 dark:text-neutral-200 md:text-8xl"
+        className="lamp z-20 mt-8 py-4 text-center font-monument text-4xl font-medium   tracking-tight text-neutral-800 dark:text-neutral-200 md:text-8xl"
       >
         {title}
-      </motion.h1>
+      </motion.h2>
     </LampContainer>
   );
 }

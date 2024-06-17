@@ -83,9 +83,9 @@ export const HeroBgText = ({
             className="relative w-max max-w-full flex-shrink-0 px-10 hover:text-neutral-50/20    dark:text-neutral-50/5 lg:px-24"
             key={item.name}
           >
-            <h1 className="outline-text-light dark:outline-text select-none font-monument text-[10vh] font-extralight italic lg:text-[20vh]">
+            <h2 className="outline-text-light dark:outline-text select-none font-monument text-[10vh] font-extralight italic lg:text-[20vh]">
               {item.name}
-            </h1>
+            </h2>
           </li>
         ))}
       </ul>

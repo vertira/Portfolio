@@ -13,7 +13,7 @@ export const FooterPolicy = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="lg:text-[12px] text-[9px] text-neutral-100">
+        <Button aria-label="Policy modal button" className="lg:text-[12px] text-[9px] text-neutral-100">
           Privacy Policy
         </Button>
       </DialogTrigger>
@@ -37,7 +37,7 @@ export const FooterPolicy = () => {
         </div>
         <DialogFooter>
           <DialogClose asChild>
-            <button className="relative inline-flex h-12 w-full overflow-hidden rounded-xl p-[1px] ">
+            <button aria-label="Close policy modal button" className="relative inline-flex h-12 w-full overflow-hidden rounded-xl p-[1px] ">
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#06b6d4_0%,#22c55e_50%,#06b6d4_100%)]" />
               <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-xl bg-neutral-900 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
                 Close

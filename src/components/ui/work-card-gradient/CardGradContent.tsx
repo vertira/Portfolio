@@ -28,17 +28,25 @@ export const CardGradContent = ({
       <p className="text-sm text-neutral-200">{description}</p>
       {!hide ? (
         <div className="flex flex-row gap-9">
-          <button className="mt-5 inline-flex h-12 w-full animate-shimmer rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+          <button
+            aria-label="Code repo link button"
+            className="mt-5 inline-flex h-12 w-full animate-shimmer rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+          >
             <a
               href={codeUrl}
               target="_blank"
               className="flex h-full w-full items-center justify-center max-sm:px-6"
+              aria-label="Check out my github repo with this project"
             >
               Code
             </a>
           </button>
-          <button className="mt-5 inline-flex h-12 w-full animate-shimmer  rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%]  font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+          <button
+            aria-label="Live website link button"
+            className="mt-5 inline-flex h-12 w-full animate-shimmer  rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%]  font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+          >
             <a
+              aria-label="Check out my website live"
               href={liveUrl}
               target="_blank"
               className="flex h-full w-full items-center justify-center max-sm:px-6"

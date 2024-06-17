@@ -15,9 +15,9 @@ export const ContactSection = () => {
           transition={{ duration: 2 }}
         >
           <Spotlight fill="white" />
-          <h1 className="mt-20 flex justify-center font-monument text-5xl text-neutral-800 dark:text-neutral-100 xl:mt-10 xl:text-[12.5rem]">
+          <h2 className="mt-20 flex justify-center font-monument text-5xl text-neutral-800 dark:text-neutral-100 xl:mt-10 xl:text-[12.5rem]">
             CONTACT
-          </h1>
+          </h2>
           <ContactSvg />
         </motion.div>
       </StickyCard>
