@@ -26,15 +26,12 @@ interface Props {
           document.documentElement.classList.add('dark');
         }
       })();
-      window.onload = function() {
-  window.scrollTo(0, 0);
-};
     </script>
     <Meta meta={meta} structuredData={structuredData} />
     <title>{title}</title>
   </head>
   <body
-    class="flex flex-col overflow-x-hidden overflow-hidden "
+    class="flex flex-col overflow-x-hidden"
   >
   <div class="flex relative flex-col h-full">
       <Navbar client:only="react"/>

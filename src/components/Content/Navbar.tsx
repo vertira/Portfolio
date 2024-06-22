@@ -17,7 +17,7 @@ export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
-  const [isHover, setIsHover] = useState("");
+  const [hoverItem, setHoverItem] = useState("");
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
@@ -33,7 +33,11 @@ export default function NavBar() {
     setTimeout(() => {
       setIsDelay(false);
     }, 5500);
-  },[]);
+    const setInitialScroll = () => {
+      window.scrollTo(0, 0);
+    };
+    setInitialScroll();
+  }, []);
   return (
     <header
       className={`fixed top-0 z-50 h-16 w-full shrink-0 items-center justify-center px-4 font-monument transition-all duration-300 ease-in-out md:px-6 ${
@@ -46,7 +50,7 @@ export default function NavBar() {
         <NavigationMenu className="dark:glass glass-light mt-10 hidden justify-center rounded-md p-3 text-neutral-200 dark:text-neutral-100/60 lg:flex  ">
           <NavigationMenuList>
             {navigation.map((item) => {
-              const isSelected = item.name === isHover;
+              const isSelected = item.name === hoverItem;
               return (
                 <NavigationMenuLink asChild key={item.name}>
                   <li className="list-none" role="button">
@@ -54,8 +58,8 @@ export default function NavBar() {
                       aria-label={`Link to section ${item.name}`}
                       href={`#${item.name}`}
                       className="group relative flex h-12 w-max items-center justify-center rounded-lg px-6 text-lg no-underline hover:text-neutral-400  dark:hover:text-neutral-50  "
-                      onMouseEnter={() => setIsHover(item.name)}
-                      onMouseLeave={() => setIsHover("")}
+                      onMouseEnter={() => setHoverItem(item.name)}
+                      onMouseLeave={() => setHoverItem("")}
                     >
                       {item.name.toUpperCase()}
                       {isSelected ? (
