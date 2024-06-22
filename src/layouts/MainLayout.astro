@@ -26,6 +26,9 @@ interface Props {
           document.documentElement.classList.add('dark');
         }
       })();
+      window.onload = function() {
+  window.scrollTo(0, 0);
+};
     </script>
     <Meta meta={meta} structuredData={structuredData} />
     <title>{title}</title>

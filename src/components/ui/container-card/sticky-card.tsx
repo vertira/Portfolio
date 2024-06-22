@@ -7,7 +7,7 @@ export const StickyCard = ({ children }: { children: React.ReactNode }) => {
     target: targetRef,
     offset: ["end end", "end start"],
   });
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.4]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.6]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
   return (
