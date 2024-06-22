@@ -24,6 +24,7 @@ export default function NavBar() {
       const isScrollingDown = currentScrollPos > prevScrollPos;
       setIsNavbarVisible(!isScrollingDown);
       setPrevScrollPos(currentScrollPos);
+      currentScrollPos === 0 ? setIsNavbarVisible(true) : null;
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -32,7 +33,7 @@ export default function NavBar() {
     setTimeout(() => {
       setIsDelay(false);
     }, 5500);
-  });
+  },[]);
   return (
     <header
       className={`fixed top-0 z-50 h-16 w-full shrink-0 items-center justify-center px-4 font-monument transition-all duration-300 ease-in-out md:px-6 ${
@@ -94,7 +95,7 @@ export default function NavBar() {
           <ThemeButton
             height={12}
             width={12}
-            className="absolute left-[1.3rem] top-[1.35rem] rounded-full opacity-70 "
+            className="absolute left-[1.3rem] top-[1.35rem] rounded-full opacity-70 focus:outline-none "
           />
           <nav className="h-3/4">
             <ul className="flex h-full flex-col justify-between">

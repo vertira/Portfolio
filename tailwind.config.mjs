@@ -27,11 +27,17 @@ export default {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        svgpath: "svgdasharray 0.8s linear forwards",
       },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "svgdasharray": {
+          to: {
+           "stroke-dashoffset": 0
+          },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
