@@ -15,17 +15,17 @@ export const CardGradContainer = () => {
         </CardGradient>
       </div>
       <div className="max-w-lg rounded-[22px]  bg-zinc-900 p-4 sm:p-10 ">
-      <CardGradient color="custom-gradient2">
+        <CardGradient color="custom-gradient2">
           <CardGradContent
-            src="/soon.webp"
-            title="It’s a Secret! But Not for Long. Coming Soon!"
-            description=""
+            src="/assistant.webp"
+            title="Asystent Fachowca App"
+            description="A construction scheduling and employee management app built with Next.js, Prisma, and TailwindCSS. The interface features smooth, intuitive animations powered by Framer Motion for a modern user experience."
             hide={true}
           />
         </CardGradient>
       </div>
       <div className="max-w-lg rounded-[22px]  bg-zinc-900 p-4 sm:p-10 ">
-      <CardGradient color="custom-gradient3">
+        <CardGradient color="custom-gradient3">
           <CardGradContent
             src="/groomka.webp"
             title="Groomka Landing Page"
