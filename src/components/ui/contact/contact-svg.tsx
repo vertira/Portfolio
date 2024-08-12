@@ -5,6 +5,12 @@ export const ContactSvg = () => {
     <div className="relative flex h-[50vh] items-center justify-center bg-transparent antialiased md:h-[60vh]">
       <button
         aria-label="CV download"
+        onClick={() => {
+          window.open(
+            "https://utfs.io/f/3b47ccfa-a93d-4881-928f-16364fe9ec1b-1zatyz.pdf",
+            "_blank",
+          );
+        }}
         className="group relative z-40 inline-block h-[120px] cursor-pointer rounded-full bg-slate-800 p-px text-xs font-semibold leading-6 no-underline shadow-2xl shadow-zinc-900  dark:text-white lg:w-[320px]"
       >
         <span className="absolute inset-0 overflow-hidden rounded-full">
