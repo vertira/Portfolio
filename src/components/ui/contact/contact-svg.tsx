@@ -7,7 +7,7 @@ export const ContactSvg = () => {
         aria-label="CV download"
         onClick={() => {
           window.open(
-            "https://utfs.io/f/dTp8ZyO4HRvAeprblwSUrSkQs5eKvHdfaqTGipF4N21Muzxj",
+            "https://utfs.io/f/dTp8ZyO4HRvAK7IFRgLYkVTEPW2NBUrC6KGJAnOSIDmzl4e5",
             "_blank",
           );
         }}
