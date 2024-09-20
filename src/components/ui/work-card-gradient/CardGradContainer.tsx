@@ -20,7 +20,9 @@ export const CardGradContainer = () => {
             src="/assistant.webp"
             title="Asystent Fachowca App"
             description="A construction scheduling and employee management app built with Next.js, Prisma, and TailwindCSS. The interface features smooth, intuitive animations powered by Framer Motion for a modern user experience."
-            hide={true}
+            liveUrl="https://asystent-fachowca.vercel.app/"
+            codeUrl="https://github.com/vertira/asystent-fachowca"
+            hide={false}
           />
         </CardGradient>
       </div>
@@ -30,7 +32,7 @@ export const CardGradContainer = () => {
             src="/groomka.webp"
             title="Groomka Landing Page"
             description="Groomka is a landing page built using Astro, React, TypeScript, and TailwindCSS. This project is designed to provide a modern, fast, and responsive user experience."
-            liveUrl="https://groomka.vercel.app/"
+            liveUrl="https://groomka.pl]/"
             codeUrl="https://github.com/vertira/groomka"
             hide={false}
           />

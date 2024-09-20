@@ -62,7 +62,7 @@ export const items = [
     description:
       "Proficient in using Tailwind CSS, a utility-first CSS framework, to build responsive and customizable user interfaces.",
     src: "/tailwind.svg",
-    title: "Tailwind",
+    title: "TailwindCSS",
   },
   {
     description:
@@ -78,9 +78,9 @@ export const items = [
   },
   {
     description:
-      "Experienced in building cross-platform mobile applications using React Native, a framework for building native mobile apps with React.",
-    src: "/react.svg",
-    title: "React Native",
+      "Experienced in leveraging Vercel AI SDK to integrate AI-powered features and optimize web applications with ease.",
+    src: "/vercel.svg",
+    title: "Vercel AI SDK",
   },
   {
     description:
