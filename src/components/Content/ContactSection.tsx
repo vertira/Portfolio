@@ -9,13 +9,13 @@ export const ContactSection = () => {
     <TextParallaxContent sectionId="contact">
       <StickyCard>
         <motion.div
-          className="flex relative h-screen flex-col"
+          className="relative flex h-screen xl:h-[110vh] flex-col"
           initial={{ opacity: 0, x: -150 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 2 }}
         >
           <Spotlight fill="white" />
-          <h2 className="mt-20 flex justify-center font-monument text-5xl text-neutral-800 dark:text-neutral-100 xl:mt-10 xl:text-[12.5rem]">
+          <h2 className="mt-20 flex justify-center font-monument text-5xl  text-neutral-800 dark:text-neutral-100 xl:mt-10 xl:text-[12rem]">
             CONTACT
           </h2>
           <ContactSvg />

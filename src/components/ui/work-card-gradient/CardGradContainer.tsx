@@ -4,17 +4,7 @@ import { CardGradContent } from "./CardGradContent";
 export const CardGradContainer = () => {
   return (
     <div className="flex h-full w-full flex-col items-center gap-20 px-10 lg:flex-row lg:items-center lg:justify-around xl:h-[70vh]">
-      <div className="max-w-lg rounded-[22px]   bg-zinc-900 p-4 sm:p-10 ">
-        <CardGradient color="custom-gradient1">
-          <CardGradContent
-            src="/portfolio.webp"
-            title="Portfolio"
-            description="A modern portfolio website. Utilizing the React framework for components, Tailwind CSS for styles, Framer Motion for animations, Astro for building fast and a focus on user experience and design."
-            hide={true}
-          />
-        </CardGradient>
-      </div>
-      <div className="max-w-lg rounded-[22px]  bg-zinc-900 p-4 sm:p-10 ">
+      <div className="min-h-[520px] max-w-lg rounded-[22px] bg-zinc-900 p-4 sm:p-10 ">
         <CardGradient color="custom-gradient2">
           <CardGradContent
             src="/assistant.webp"
@@ -26,7 +16,17 @@ export const CardGradContainer = () => {
           />
         </CardGradient>
       </div>
-      <div className="max-w-lg rounded-[22px]  bg-zinc-900 p-4 sm:p-10 ">
+      <div className="min-h-[520px]  max-w-lg rounded-[22px] bg-zinc-900 p-4 sm:p-10 ">
+        <CardGradient color="custom-gradient1">
+          <CardGradContent
+            src="/link.webp"
+            title="Sprawdź link"
+            description="A link analysis and verification application that uses artificial intelligence to check and assess domain risk. Integrates CERT, VirusTotal and WhoIs databases."
+            hide={true}
+          />
+        </CardGradient>
+      </div>
+      <div className="min-h-[520px] max-w-lg rounded-[22px]  bg-zinc-900 p-4 sm:p-10 ">
         <CardGradient color="custom-gradient3">
           <CardGradContent
             src="/groomka.webp"

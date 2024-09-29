@@ -25,14 +25,14 @@ export const Hero = () => {
         opacity,
       }}
       ref={targetRef}
-      className="fixed left-0 top-0 flex h-full w-full flex-col items-center justify-center"
+      className="fixed left-0 top-0 flex min-h-full w-full items-center justify-center "
     >
       <Words />
       {visible ? (
-          <Text
-            words=" Hi I'm Krystian Grala Front end Developer"
-            color="neutral-200"
-          />
+        <Text
+          words=" Hi I'm Krystian Grala Front end Developer"
+          color="neutral-200"
+        />
       ) : (
         ""
       )}

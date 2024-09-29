@@ -39,7 +39,7 @@ const Text = ({ words, color }: TextProps) => {
   };
 
   return (
-    <div className="flex h-max w-full flex-col items-center justify-center overflow-hidden ">
+    <div className="flex h-fit relative w-full flex-col items-center justify-center ">
       <h1
         className={`z-20 text-center text-4xl font-bold text-neutral-800 md:text-center dark:text-${color}  w-full font-monument font-medium leading-[1.3] tracking-tighter text-neutral-100 md:text-7xl xl:text-8xl `}
       >
@@ -49,7 +49,7 @@ const Text = ({ words, color }: TextProps) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 3, duration: 2 }}
-        className="relative h-40 w-3/4"
+        className="relative h-auto w-3/4"
       >
         <div className="absolute top-0 h-[2px] w-full bg-gradient-to-r from-transparent via-cyan-500 to-transparent blur-sm" />
         <div className="absolute top-0 h-px w-full bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
@@ -61,7 +61,7 @@ const Text = ({ words, color }: TextProps) => {
         animate={{ opacity: 1 }}
         transition={{ delay: 4, duration: 1 }}
         onClick={scrollDown}
-        className="z-100 inline-flex h-14 w-14 animate-bounce cursor-pointer overflow-hidden rounded-full p-[1px] "
+        className="mt-20 inline-flex h-14 w-14 animate-bounce cursor-pointer overflow-hidden rounded-full p-[1px] "
       >
         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#06b6d4_0%,#22c55e_50%,#06b6d4_100%)]" />
         <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
