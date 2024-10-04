@@ -5,10 +5,11 @@ import { HeroSection } from "@/components/Content/HeroSection";
 import { SkillsSection } from "@/components/Content/SkillsSection";
 import { WorkSection } from "@/components/Content/WorkSection";
 import { ContactSection } from "@/components/Content/ContactSection";
+import { Chat } from "@/components/Content/Chat";
 ---
 
 <MainLayout>
-  <div class="bg-neutral-100 dark:bg-neutral-950  ">
+  <div class="bg-neutral-100 dark:bg-neutral-950 relative">
     <HeroSection client:load/>
     <div class="max-sm:hidden h-[20vh]"></div>
     <SkillsSection  client:only="react"/>
@@ -16,5 +17,6 @@ import { ContactSection } from "@/components/Content/ContactSection";
     <WorkSection client:only="react"/>
     <div class="h-[20vh]"></div>
     <ContactSection client:only="react"/>
+    <Chat client:only />
   </div>
 </MainLayout>
