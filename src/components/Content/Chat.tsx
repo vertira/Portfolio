@@ -9,8 +9,8 @@ export const Chat = () => {
   const isMobile = size?.width ? size.width < 1024 : false;
   return (
     <motion.div
-      initial={{ y: 335, x: 400 }}
-      animate={isOpen ? { y: 0, x: 0 } : { y: isMobile ? 440 : 335, x: isMobile ? 160 : 400 }}
+      initial={{ y: 440, x: 400 }}
+      animate={isOpen ? { y: 0, x: 0 } : { y: isMobile ? 440 : 440, x: isMobile ? 160 : 400 }}
       transition={{ duration: 0.5 }}
       className="fixed bottom-0 right-0"
     >
