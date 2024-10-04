@@ -20,7 +20,7 @@ export const Chat = () => {
     >
       <div className="relative">
         <iframe
-          src="https://portfolio-chat-rag.vercel.app/"
+          src="http://localhost:3000"
           width="600"
           height="400"
           className="h-[500px] w-[350px] rounded-xl md:h-[500px] md:w-[600px]"
