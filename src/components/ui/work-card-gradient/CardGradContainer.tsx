@@ -21,6 +21,7 @@ export const CardGradContainer = () => {
           <CardGradContent
             src="/link.webp"
             title="Sprawdź link"
+            liveUrl="https://sprawdz-link.vercel.app/"
             description="A link analysis and verification application that uses artificial intelligence to check and assess domain risk. Integrates CERT, VirusTotal and WhoIs databases."
             hide={true}
           />
@@ -32,7 +33,7 @@ export const CardGradContainer = () => {
             src="/groomka.webp"
             title="Groomka Landing Page"
             description="Groomka is a landing page built using Astro, React, TypeScript, and TailwindCSS. This project is designed to provide a modern, fast, and responsive user experience."
-            liveUrl="https://groomka.pl]/"
+            liveUrl="https://groomka.pl/"
             codeUrl="https://github.com/vertira/groomka"
             hide={false}
           />
